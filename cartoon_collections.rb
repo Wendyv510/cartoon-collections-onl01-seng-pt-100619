@@ -26,6 +26,9 @@ long_planeteer_calls(assorted_words)
 
 def find_the_cheese(snacks,soup)
   snacks = ["crackers", "gouda", "thyme"]
-  
+  soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
   cheese_types = ["cheddar", "gouda", "camembert"]
+  
+  find_the_cheese(snacks).detect {|snacks| (cheese_types)}
+  find_the_cheese(soup).detect {|soup| (cheese_types)}
 end
